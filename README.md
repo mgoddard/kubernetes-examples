@@ -33,18 +33,18 @@ Install Minikube...
 brew install minikube
 ```
 
-Then start the service...
-```bash
-minikube start --cpus 4 --memory 8192
-```
-reference: https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube
-
 ### Helm
 Install Helm...
 ```bash
 brew install helm
 ```
 reference: https://helm.sh/docs/intro/install/#from-homebrew-macos
+
+Then start the service...
+```bash
+minikube start --cpus 4 --memory 8192
+```
+reference: https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube
 
 ## Installing and Running CockroachDB
 Add the official `CockroachDB` chart repository:
