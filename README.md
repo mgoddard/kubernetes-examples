@@ -57,6 +57,11 @@ Update your `helm` repo to ensure you are pulling the latest version of Cockroac
 helm repo update
 ```
 
+Initialize `helm` (to avoid `Error: could not find tiller` during subsequent steps)
+```bash
+helm init
+```
+
 You can use `helm` to install either a `secure` or `insecure` cluster.  Instructions differ slightly for each.
 
 * [Secure](SECURE.md) 
