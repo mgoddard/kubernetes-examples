@@ -196,7 +196,7 @@ Stop the `kubectl` process (`control-c` will work, as will closing the terminal 
 
 Run the following to purge the installation of CockroachDB with helm:
 ```bash
-helm uninstall k8demo
+helm delete k8demo
 ```
 
 Stop the `minikube` environment:
