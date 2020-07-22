@@ -126,7 +126,7 @@ If run correctly, there will be no output.
 then run the workload...
 ```bash
 # insecure cluster
-kubectl run workload-run -it --image=cockroachdb/cockroach:latest --rm --restart=Never -- workload run ycsb --workload=A --tolerate-errors --duration=10m 'postgresql://root@k8demo-cockroachdb-public:26257?sslmode=disable&ApplicationName=ycsb'
+kubectl run ycsb-workload-run -it --image=cockroachdb/cockroach:latest --rm --restart=Never -- workload run ycsb --workload=A --tolerate-errors --duration=10m 'postgresql://root@k8demo-cockroachdb-public:26257?sslmode=disable&ApplicationName=ycsb'
 
 # secure cluster
 kubectl exec -it cockroachdb-client-secure -- ./cockroach workload run ycsb --workload=A --tolerate-errors --duration=10m 'postgres://root@k8demo-cockroachdb-public:26257?sslmode=verify-full&ApplicationName=ycsb&sslrootcert=/cockroach-certs/ca.crt&sslcert=/cockroach-certs/client.root.crt&sslkey=/cockroach-certs/client.root.key'
