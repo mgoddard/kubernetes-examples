@@ -5,7 +5,7 @@ The following steps will install Kubernetes locally and configure a 3 node Cockr
 Before getting started make sure the following tools are installed.
 
 * [Homebrew](https://brew.sh) - a package manager for macOS
-* [VirtualBox](https://www.virtualbox.org) - VirtualBox is a general-purpose full virtualizer for x86 hardware
+* [VirtualBox](https://www.virtualbox.org) _or_ [VMware Fusion](https://www.vmware.com/products/fusion/fusion-evaluation.html)
 * [Kubectl](https://kubernetes.io/docs/setup/minikube/) - Kubernetes command-line tool
 * [Minikube](https://kubernetes.io/docs/setup/minikube/) - Minikube runs a single-node Kubernetes cluster inside a Virtual Machine (VM) 
 * [Helm](https://helm.sh/) - the package manager for Kubernetes
