@@ -41,9 +41,9 @@ brew install helm
 reference: https://helm.sh/docs/intro/install/#from-homebrew-macos
 
 ### Start up Minikube
-Then start the service... (for this example, we use VMware Fusion)
+Then start the service... (using VMware Fusion here)
 ```bash
-minikube start --cpus 4 --memory 8192 --driver=vmware
+export PATH=/usr/local/bin:$PATH ; minikube start --cpus 4 --memory 8192 --driver=vmware
 ```
 reference: https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube
 
